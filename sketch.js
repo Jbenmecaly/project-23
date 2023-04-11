@@ -226,7 +226,7 @@ function enemy(){
   if(frameCount%50===0){
 
     //giving random x and y positions for zombie to appear
-    zombie = createSprite(random(500,1100),random(100,500),40,40)
+    zombie = createSprite(random(600,1100),random(100,500),40,40)
 
     zombie.addImage(zombieImg)
     zombie.scale = 0.15
@@ -234,7 +234,7 @@ function enemy(){
     zombie.debug= true
     zombie.setCollider("rectangle",0,0,400,400)
    
-    zombie.lifetime = 400
+    zombie.lifetime = 500
    zombieGroup.add(zombie)
   }
 
